@@ -9,7 +9,7 @@ import {
   signInFailure,
 } from '../redux/user/userSlice';
 import OAuth from '../components/OAuth';
-import logo from '../assets/logo1.png';
+import logo from '../assets/logo3.webp';
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});
@@ -50,10 +50,8 @@ export default function SignIn() {
         {/* left */}
         <div className='flex-1'>
           <Link to="/" className='font-bold dark:text-white text-4xl'>
-            <img src={logo} alt="Logo de Mamen" className='w-8 h-8' style={{ display: 'inline', verticalAlign: 'middle' }} />
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-lg text-white'>
-              Mamen Blog
-            </span>
+            <img src={logo} alt="Logo de Mamen" className='w-21 h-21' style={{ display: 'inline', verticalAlign: 'middle' }} />
+           
           </Link>
           <p className='text-sm mt-5'>
               You can sign in with your email and password

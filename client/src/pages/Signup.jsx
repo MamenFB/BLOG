@@ -1,4 +1,4 @@
-import logo from '../assets/logo1.png';
+import logo from '../assets/logo4.webp';
 import { Alert, Button, Label, Spinner, TextInput } from 'flowbite-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -45,10 +45,8 @@ export default function SignUp() {
         {/* left */}
         <div className='flex-1'>
         <Link to="/" className='font-bold dark:text-white text-4xl'>
-        <img src={logo} alt="Logo de Mamen" className='w-8 h-8' style={{ display: 'inline', verticalAlign: 'middle' }} />
-          <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-lg text-white'>
-           Mamen Blog
-          </span>
+        <img src={logo} alt="Logo de Mamen" className='w-50 h-50' style={{ display: 'inline', verticalAlign: 'middle' }} />
+          
         </Link>
         <p className='text-sm mt-5'>
             You can sign up with your email and password

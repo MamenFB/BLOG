@@ -1,8 +1,7 @@
 import { Footer } from 'flowbite-react'
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo1.png';
-import { BsFacebook, BsInstagram, BsTwitter, BsDribbble, BsGithub } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from 'react-icons/bs';
 
 export default function FooterCom() {
   return (
@@ -11,7 +10,7 @@ export default function FooterCom() {
         <div className='grid w-full justify-between sm:flex md:grid-cols-1'>
           <div className='mt-5'>
           <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-            <img src={logo} alt="Logo de Mamen" className='w-8 h-8' style={{ display: 'inline', verticalAlign: 'middle' }} />
+           
               <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-lg text-white'>
                 Mamen Blog
               </span>

@@ -70,7 +70,8 @@ export default function SignUp() {
               <TextInput type='password'placeholder='Password'id='password' onChange={handleChange}/>
             </div>
             
-            <Button gradientDuoTone='purpleToPink' type='submit' disabled={loading}>
+            <Button gradientDuoTone='purpleToPink' type='submit' 
+            disabled={loading}>
               {
                 loading ? (
                 <>
@@ -93,7 +94,7 @@ export default function SignUp() {
           </div>
           {errorMessage && (
             <Alert  className='mt-5' color='failure'>
-               {errorMessage}
+              {errorMessage}
             </Alert> 
           )}
 

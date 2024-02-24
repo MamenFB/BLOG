@@ -3,13 +3,10 @@ import { Alert, Button, Label, Spinner, TextInput } from 'flowbite-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  signInStart,
-  signInSuccess,
-  signInFailure,
-} from '../redux/user/userSlice';
+import { signInStart, signInSuccess, signInFailure,} from '../redux/user/userSlice';
 import OAuth from '../components/OAuth';
 import logo from '../assets/logo3.webp';
+
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});
@@ -51,7 +48,7 @@ export default function SignIn() {
         <div className='flex-1'>
           <Link to="/" className='font-bold dark:text-white text-4xl'>
             <img src={logo} alt="Logo de Mamen" className='w-21 h-21' style={{ display: 'inline', verticalAlign: 'middle' }} />
-           
+
           </Link>
           <p className='text-sm mt-5'>
               You can sign in with your email and password
@@ -71,8 +68,8 @@ export default function SignIn() {
               <TextInput type='password'placeholder='**********'id='password' onChange={handleChange}/>
             </div>
             
-            <Button gradientDuoTone='purpleToPink' type='submit' disabled={loading}
-            >
+            <Button gradientDuoTone='purpleToPink' type='submit' 
+            disabled={loading}>
               {
                 loading ? (
                 <>

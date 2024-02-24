@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 
 
 .avatar-small img {
@@ -8,3 +9,5 @@
   height: 30%; 
   object-fit: cover; 
 }
+=======
+>>>>>>> 9d936d4dd17a502233f4769ffe6e264c39686727

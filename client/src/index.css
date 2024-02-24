@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.avatar-small img {
+  width: 30px; 
+  height: 30%; 
+  object-fit: cover; 
+}

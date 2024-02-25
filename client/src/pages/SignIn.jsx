@@ -9,26 +9,27 @@ import logo from '../assets/logo3.webp';
 
 
 export default function SignIn() {
-  const [formData, setFormData] = useState({});
-  const { loading, error: errorMessage } = useSelector((state) => state.user);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  const [formData, setFormData] = useState({});// Estado local para almacenar los datos del formulario.
+  const { loading, error: errorMessage } = useSelector((state) => state.user);// Usa el hook useSelector para acceder al estado de usuario y obtener las propiedades loading y error.
+  const dispatch = useDispatch();// Hook useDispatch para enviar acciones a la store de Redux.
+  const navigate = useNavigate();// Hook useNavigate para programar la navegación entre vistas.
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
+    setFormData({ ...formData, [e.target.id]: e.target.value.trim() });// Actualiza el estado del formulario
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.email || !formData.password) {
+      // Verifica si el correo electrónico y la contraseña
       return dispatch(signInFailure('Please fill all the fields'));
     }
     try {
       dispatch(signInStart());
-      const res = await fetch('/api/auth/signin', {
+      const res = await fetch('/api/auth/signin', { // Realiza una solicitud POST al endpoint de inicio de sesión
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData), // Envía los datos del formulario como JSON
       });
-      const data = await res.json();
+      const data = await res.json();// Espera la respuesta y la convierte a JSON
       if (data.success === false) {
         dispatch(signInFailure(data.message));
       }

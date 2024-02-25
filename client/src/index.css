@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .avatar-small img {
-  width: 30px; 
-  height: 30%; 
+  width: 60px; 
+  height: 60%; 
   object-fit: cover; 
 }

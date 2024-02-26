@@ -10,7 +10,7 @@ export default function FooterCom() {
         <div className='grid w-full justify-between sm:flex md:grid-cols-1'>
           <div className='mt-5'>
           <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-           
+          
               <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-lg text-white'>
                 Mamen Blog
               </span>
@@ -18,14 +18,14 @@ export default function FooterCom() {
           </div>
           <div className='grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6'></div>
           <div>
-              <Footer.Title title='About' />
+              <Footer.Title title='Acerca de' />
               <Footer.LinkGroup col>
                 <Footer.Link
                   href='https://www.100jsprojects.com'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  100 JS Projects
+                  100 JS Proyectos
                 </Footer.Link>
                 <Footer.Link
                   href='/about'
@@ -37,7 +37,7 @@ export default function FooterCom() {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title='Follow us' />
+              <Footer.Title title='Sígueme' />
               <Footer.LinkGroup col>
                 <Footer.Link
                   href='https://github.com/MamenFB'
@@ -52,8 +52,8 @@ export default function FooterCom() {
             <div>
               <Footer.Title title='Legal' />
               <Footer.LinkGroup col>
-                <Footer.Link href='#'>Privacy Policy</Footer.Link>
-                <Footer.Link href='#'>Terms &amp; Conditions</Footer.Link>
+                <Footer.Link href='#'>Política de privacidad</Footer.Link>
+                <Footer.Link href='#'>Terminos &amp; Condiciones</Footer.Link>
               </Footer.LinkGroup>
             </div>
         </div>

@@ -69,12 +69,12 @@ export default function DashUsers() {
         <>
           <Table hoverable className='shadow-md'>
             <Table.Head>
-              <Table.HeadCell>Date created</Table.HeadCell>
-              <Table.HeadCell>User image</Table.HeadCell>
-              <Table.HeadCell>Username</Table.HeadCell>
-              <Table.HeadCell>Email</Table.HeadCell>
-              <Table.HeadCell>Admin</Table.HeadCell>
-              <Table.HeadCell>Delete</Table.HeadCell>
+              <Table.HeadCell>Fecha de creación</Table.HeadCell>
+              <Table.HeadCell>Imagen del usuario</Table.HeadCell>
+              <Table.HeadCell>Nombre de usuario</Table.HeadCell>
+              <Table.HeadCell>Correo electrónico</Table.HeadCell>
+              <Table.HeadCell>Administrador</Table.HeadCell>
+              <Table.HeadCell>Eliminar</Table.HeadCell>
             </Table.Head>
             {users.map((user) => (
               <Table.Body className='divide-y' key={user._id}>
@@ -106,7 +106,7 @@ export default function DashUsers() {
                       }}
                       className='font-medium text-red-500 hover:underline cursor-pointer'
                     >
-                      Delete
+                      Eliminar
                     </span>
                   </Table.Cell>
                 </Table.Row>
@@ -118,12 +118,12 @@ export default function DashUsers() {
               onClick={handleShowMore}
               className='w-full text-teal-500 self-center text-sm py-7'
             >
-              Show more
+              Mostrar más
             </button>
           )}
         </>
       ) : (
-        <p>You have no users yet!</p>
+        <p>¡Aún no tienes usuarios!</p>
       )}
       <Modal
         show={showModal}
@@ -136,14 +136,15 @@ export default function DashUsers() {
           <div className='text-center'>
             <HiOutlineExclamationCircle className='h-14 w-14 text-gray-400 dark:text-gray-200 mb-4 mx-auto' />
             <h3 className='mb-5 text-lg text-gray-500 dark:text-gray-400'>
-              Are you sure you want to delete this user?
+              
+                ¿Estás seguro de que quieres eliminar este usuario?
             </h3>
             <div className='flex justify-center gap-4'>
               <Button color='failure' onClick={handleDeleteUser}>
-                Yes, I'm sure
+                Sí,estoy seguro
               </Button>
               <Button color='gray' onClick={() => setShowModal(false)}>
-                No, cancel
+                No,cancelar
               </Button>
             </div>
           </div>

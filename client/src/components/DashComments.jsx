@@ -77,12 +77,12 @@ export default function DashComments() {
         <>
           <Table hoverable className='shadow-md'>
             <Table.Head>
-              <Table.HeadCell>Date updated</Table.HeadCell>
-              <Table.HeadCell>Comment content</Table.HeadCell>
-              <Table.HeadCell>Number of likes</Table.HeadCell>
-              <Table.HeadCell>PostId</Table.HeadCell>
-              <Table.HeadCell>UserId</Table.HeadCell>
-              <Table.HeadCell>Delete</Table.HeadCell>
+              <Table.HeadCell>Fecha de actualización</Table.HeadCell>
+              <Table.HeadCell>Contenido del comentario</Table.HeadCell>
+              <Table.HeadCell>Número de likes</Table.HeadCell>
+              <Table.HeadCell>Id de la publicación</Table.HeadCell>
+              <Table.HeadCell>Id del usuario</Table.HeadCell>
+              <Table.HeadCell>Eliminar</Table.HeadCell>
             </Table.Head>
             {comments.map((comment) => (
               <Table.Body className='divide-y' key={comment._id}>
@@ -102,7 +102,7 @@ export default function DashComments() {
                       }}
                       className='font-medium text-red-500 hover:underline cursor-pointer'
                     >
-                      Delete
+                      Eliminar
                     </span>
                   </Table.Cell>
                 </Table.Row>
@@ -114,12 +114,13 @@ export default function DashComments() {
               onClick={handleShowMore}
               className='w-full text-teal-500 self-center text-sm py-7'
             >
-              Show more
+              
+              Mostrar más
             </button>
           )}
         </>
       ) : (
-        <p>You have no comments yet!</p>
+        <p>¡Aún no tienes comentarios!</p>
       )}
       <Modal
         show={showModal}
@@ -132,14 +133,14 @@ export default function DashComments() {
           <div className='text-center'>
             <HiOutlineExclamationCircle className='h-14 w-14 text-gray-400 dark:text-gray-200 mb-4 mx-auto' />
             <h3 className='mb-5 text-lg text-gray-500 dark:text-gray-400'>
-              Are you sure you want to delete this comment?
+            ¿Estás seguro de que quieres eliminar este comentario?
             </h3>
             <div className='flex justify-center gap-4'>
               <Button color='failure' onClick={handleDeleteComment}>
-                Yes, I'm sure
+                  Sí,lo estoy 
               </Button>
               <Button color='gray' onClick={() => setShowModal(false)}>
-                No, cancel
+                No, cancela
               </Button>
             </div>
           </div>

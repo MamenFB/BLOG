@@ -99,15 +99,15 @@ export default function Header() {
               <span className='block text-sm font-medium truncate'>{currentUser.email}</span>
             </Dropdown.Header>
               <Link to={'/dashboard?tab=profile'}>
-                <Dropdown.Item>Profile</Dropdown.Item>
+                <Dropdown.Item>Perfil</Dropdown.Item>
               </Link>
             <Dropdown.Divider />
-            <Dropdown.Item>Sign out</Dropdown.Item>
-          </Dropdown>
+              <Dropdown.Item>Desconectar</Dropdown.Item>
+            </Dropdown>
         ) : (
           <Link to='/sign-in'>
             <Button gradientDuoTone='purpleToBlue' outline>
-              Sign In
+              Iniciar Sesión
             </Button>
           </Link>
         )}
@@ -115,13 +115,13 @@ export default function Header() {
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={path === '/'} as={'div'}>
-          <Link to='/'>Home</Link>
+          <Link to='/'>Inicio</Link>
         </Navbar.Link>
         <Navbar.Link active={path === '/about'} as={'div'}>
-          <Link to='/about'>About</Link>
+          <Link to='/about'>Acerca de</Link>
         </Navbar.Link>
         <Navbar.Link active={path === '/projects'} as={'div'}>
-          <Link to='/projects'>Projects</Link>
+          <Link to='/projects'>Proyectos</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

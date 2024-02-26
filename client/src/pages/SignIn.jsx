@@ -52,8 +52,7 @@ export default function SignIn() {
 
           </Link>
           <p className='text-sm mt-5'>
-              You can sign in with your email and password
-              or with Google.
+            Puedes iniciar sesión con tu correo electrónico y contraseña o con Google.
           </p>
           </div>
         {/* right */}
@@ -61,11 +60,11 @@ export default function SignIn() {
         <div className='flex-1'>
           <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
             <div>
-              <Label value='Your email' />
-              <TextInput type='email'placeholder='name@company.com'id='email' onChange={handleChange}/>
+              <Label value='Tú email' />
+              <TextInput type='email'placeholder='nombre@company.com'id='email' onChange={handleChange}/>
             </div>
             <div className='flex-1'>
-              <Label value='Your password' />
+              <Label value='Tu contraseña' />
               <TextInput type='password'placeholder='**********'id='password' onChange={handleChange}/>
             </div>
             
@@ -75,18 +74,18 @@ export default function SignIn() {
                 loading ? (
                 <>
                   <Spinner size='sm' />
-                  <span className='pl-3'>Loading...</span>
+                  <span className='pl-3'>Cargando..</span>
                 </>
               ) : (
-                'Sign In'
+                'Regístrate'
               )}
             </Button>
             <OAuth />
           </form>
           <div className='flex gap-2 text-sm mt-5'>
-            <span>Dont Have an account?</span>
+            <span>¿No tienes una cuenta?</span>
             <Link to='/sign-up' className='text-blue-500'>
-              Sign Up
+              Regístrate
             </Link>
           </div>
           {errorMessage && (

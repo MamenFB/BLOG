@@ -49,8 +49,7 @@ export default function SignUp() {
           
         </Link>
         <p className='text-sm mt-5'>
-            You can sign up with your email and password
-            or with Google.
+          Puedes registrarte con tu correo electrónico y contraseña o con Google.
         </p>
         </div>
         {/* right */}
@@ -58,16 +57,16 @@ export default function SignUp() {
         <div className='flex-1'>
           <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
             <div>
-              <Label value='Your username' />
-              <TextInput type='text'placeholder='Username'id='username' onChange={handleChange}/>
+              <Label value='Tu nombre' />
+              <TextInput type='text'placeholder='nombre'id='username' onChange={handleChange}/>
             </div>
             <div className='flex-1'>
-              <Label value='Your email' />
-              <TextInput type='email'placeholder='name@company.com'id='email' onChange={handleChange}/>
+              <Label value='Tu email' />
+              <TextInput type='email'placeholder='nombre@company.com'id='email' onChange={handleChange}/>
             </div>
             <div className='flex-1'>
-              <Label value='Your password' />
-              <TextInput type='password'placeholder='Password'id='password' onChange={handleChange}/>
+              <Label value='Tu contraseña' />
+              <TextInput type='password'placeholder='**********'id='password' onChange={handleChange}/>
             </div>
             
             <Button gradientDuoTone='purpleToPink' type='submit' 
@@ -76,10 +75,10 @@ export default function SignUp() {
                 loading ? (
                 <>
                   <Spinner size='sm' />
-                  <span className='pl-3'>Loading...</span>
+                  <span className='pl-3'>Cargando...</span>
                 </>
               ) : (
-                'Sign Up'
+                'Iniciar sesión'
               )}
             </Button>
             <OAuth />
@@ -87,9 +86,9 @@ export default function SignUp() {
             
           </form>
           <div className='flex gap-2 text-sm mt-5'>
-            <span>Have an account?</span>
+            <span>¿Tienes una cuenta?</span>
             <Link to='/sign-in' className='text-blue-500'>
-              Sign In
+              Iniciar sesión
             </Link>
           </div>
           {errorMessage && (

@@ -5,21 +5,21 @@ const initialState = {
   error: null,
   loading: false,
 };
-
+// Importa la función createSlice de Redux Toolkit para crear un slice de estado.
 const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    signInStart: (state) => {
+    signInStart: (state) => { // Acción para iniciar
       state.loading = true;
       state.error = null;
     },
-    signInSuccess: (state, action) => {
+    signInSuccess: (state, action) => {// Acción para manejar un inicio 
       state.currentUser = action.payload;
       state.loading = false;
       state.error = null;
     },
-    signInFailure: (state, action) => {
+    signInFailure: (state, action) => {// Acción para manejar un error
       state.loading = false;
       state.error = action.payload;
     },

@@ -17,4 +17,4 @@ const themeSlice = createSlice({
 // se exporta toggleTheme para cambiar el tema
 export const {toggleTheme} = themeSlice.actions;
 //  utilizado en la configuración del store de Redux
-export default themeSlice.reducer;
+export default themeSlice.reducer

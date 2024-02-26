@@ -214,7 +214,7 @@ export default function DashProfile() {
         <TextInput
           type='text'
           id='username'
-          placeholder='username'
+          placeholder='nombre'
           defaultValue={currentUser.username}
           onChange={handleChange}
         />
@@ -228,7 +228,7 @@ export default function DashProfile() {
         <TextInput
           type='password'
           id='password'
-          placeholder='password'
+          placeholder='contraseña'
           onChange={handleChange}
         />
         <Button
@@ -237,7 +237,7 @@ export default function DashProfile() {
           outline
           disabled={loading || imageFileUploading}
         >
-          {loading ? 'Loading...' : 'Update'}
+          {loading ? 'Cargando...' : 'Actualizar'}
         </Button>
         {currentUser.isAdmin && (
           <Link to={'/create-post'}>
@@ -246,17 +246,17 @@ export default function DashProfile() {
               gradientDuoTone='purpleToPink'
               className='w-full'
             >
-              Create a post
+              Crear una publicación
             </Button>
           </Link>
         )}
       </form>
       <div className='text-red-500 flex justify-between mt-5'>
         <span onClick={() => setShowModal(true)} className='cursor-pointer'>
-          Delete Account
+          Eliminar Cuenta
         </span>
         <span onClick={handleSignout} className='cursor-pointer'>
-          Sign Out
+          Cerrar Sesión
         </span>
       </div>
       {updateUserSuccess && (

@@ -1,30 +1,20 @@
 import { Alert, Button, Modal, ModalBody, TextInput } from 'flowbite-react';
 import { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
-import {
-  getDownloadURL,
-  getStorage,
-  ref,
-  uploadBytesResumable,
-} from 'firebase/storage';
+import {  getDownloadURL,  getStorage,  ref,  uploadBytesResumable } from 'firebase/storage';
 import { app } from '../firebase';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import {
-  updateStart,
-  updateSuccess,
-  updateFailure,
-  deleteUserStart,
-  deleteUserSuccess,
-  deleteUserFailure,
-  signoutSuccess,
-} from '../redux/user/userSlice';
+import { updateStart, updateSuccess, updateFailure, deleteUserStart, deleteUserSuccess, deleteUserFailure, signoutSuccess } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 
 export default function DashProfile() {
+
+   // Estado y hooks para manejar el estado local y el estado global (Redux).
   const { currentUser, error, loading } = useSelector((state) => state.user);
+   // Estado local para manejar la imagen, el URL de la imagen, el progreso y errores de carga, etc.
   const [imageFile, setImageFile] = useState(null);
   const [imageFileUrl, setImageFileUrl] = useState(null);
   const [imageFileUploadProgress, setImageFileUploadProgress] = useState(null);
@@ -36,6 +26,8 @@ export default function DashProfile() {
   const [formData, setFormData] = useState({});
   const filePickerRef = useRef();
   const dispatch = useDispatch();
+
+  // Maneja el cambio en la selección de archivo de imagen, actualizando el estado local.
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -43,6 +35,7 @@ export default function DashProfile() {
       setImageFileUrl(URL.createObjectURL(file));
     }
   };
+  // Efecto para subir la imagen cuando el archivo de imagen cambia.
   useEffect(() => {
     if (imageFile) {
       uploadImage();
@@ -84,6 +77,7 @@ export default function DashProfile() {
         setImageFileUploading(false);
       },
       () => {
+        // Actualiza el URL de la imagen en el estado local tras la carga
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
           setImageFileUrl(downloadURL);
           setFormData({ ...formData, profilePicture: downloadURL });
@@ -93,10 +87,12 @@ export default function DashProfile() {
     );
   };
 
+    // Maneja los cambios en los campos del formulario actualizando el estado
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
+  // Maneja el envío del formulario para actualizar el perfil del usuario.
   const handleSubmit = async (e) => {
     e.preventDefault();
     setUpdateUserError(null);
@@ -111,12 +107,13 @@ export default function DashProfile() {
     }
     try {
       dispatch(updateStart());
+      // Realiza una solicitud HTTP PUT al servidor para actualizar los datos del usuario.
       const res = await fetch(`/api/user/update/${currentUser._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData), // Convierte los datos del formulario a un string JSON 
       });
       const data = await res.json();
       if (!res.ok) {
@@ -148,9 +145,10 @@ export default function DashProfile() {
       dispatch(deleteUserFailure(error.message));
     }
   };
-
+// Función asincrónica para manejar el cierre de sesión del usuario.
   const handleSignout = async () => {
     try {
+      // Realiza una solicitud de cierre de sesión al servidor
       const res = await fetch('/api/user/signout', {
         method: 'POST',
       });

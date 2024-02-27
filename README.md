@@ -19,7 +19,7 @@ ingeniería de software y lenguajes de programación.
 ## 🔥 Herramientas
 🔹Git / GitHub  
 🔹Visual Studio Code  
-🔹Insomnia  
+🔹Insomnia ➰  probar APIs 
 
 ## 🚀 Instalación
 - 🔸 carpeta BLOG  

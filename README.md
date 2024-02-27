@@ -1,10 +1,10 @@
 
 ## 🌈  Descripción
 - Blog MERN  
-- Bienvenidx a mi Blog  
+- Bienvenidxs a mi Blog  
   
-Aquí encontrarás una variedad de artículos y tutoriales sobre temas como desarrollo web,  
-ingeniería de software y lenguajes de programación.
+
+En este blog, encontrarás actualizaciones sobre desarrollo web, tecnologías emergentes y oportunidades de empleo en el sector tecnológico.
 
 
 
@@ -48,7 +48,9 @@ ingeniería de software y lenguajes de programación.
   - ➖ npm i moment   
   - ➖ npm install --save-dev tailwind-scrollbar
   - ➖ npm install @reduxjs/toolkit react-redux  
-   ➰ herramientas para facilitar la gestión del estado en aplicaciones, permite conectar componentes React con el estado Redux, permitiendo a los componentes suscribirse a actualizaciones del estado y despachar acciones para actualizarlo.
+       ➰ herramientas para facilitar la gestión del estado en aplicaciones, permite conectar componentes React con el estado Redux, permitiendo a los componentes suscribirse a actualizaciones del estado y despachar acciones para actualizarlo.
+  - ➖ npm install --save-dev tailwind-scrollbar  
+
 
 ## 🚨Instalación
 - 🔹 Creamos un archivo .env donde va la clave  

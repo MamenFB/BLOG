@@ -84,12 +84,12 @@ export default function CreatePost() {
   };
   return (
     <div className='p-3 max-w-3xl mx-auto min-h-screen'>
-      <h1 className='text-center text-3xl my-7 font-semibold'>Create a post</h1>
+      <h1 className='text-center text-3xl my-7 font-semibold'>Crear una publicacion</h1>
       <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-4 sm:flex-row justify-between'>
           <TextInput
             type='text'
-            placeholder='Title'
+            placeholder='Título'
             required
             id='title'
             className='flex-1'
@@ -102,10 +102,10 @@ export default function CreatePost() {
               setFormData({ ...formData, category: e.target.value })
             }
           >
-            <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>JavaScript</option>
-            <option value='reactjs'>React.js</option>
-            <option value='nextjs'>Next.js</option>
+            <option value='uncategorized'>Seleciona  categoria</option>
+            <option value='javascript'>Noticias</option>
+            <option value='reactjs'>Sobre empleos</option>
+            <option value='nextjs'>Tecnologías</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
@@ -130,7 +130,7 @@ export default function CreatePost() {
                 />
               </div>
             ) : (
-              'Upload Image'
+              'Cargar imagen'
             )}
           </Button>
         </div>
@@ -152,7 +152,7 @@ export default function CreatePost() {
           }}
         />
         <Button type='submit' gradientDuoTone='purpleToPink'>
-          Publish
+          Publicar
         </Button>
         {publishError && (
           <Alert className='mt-5' color='failure'>

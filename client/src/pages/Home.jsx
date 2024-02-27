@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <div>
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Bienvenidx a mi Blog</h1>
+        <h1 className='text-3xl font-bold lg:text-6xl'>Bienvenidxs a mi Blog</h1>
         <p className='text-gray-500 text-xs sm:text-sm'>
-          Aquí encontrarás una variedad de artículos y tutoriales sobre temas como desarrollo web, 
-          ingeniería de software y lenguajes de programación.
+            En este blog, encontrarás actualizaciones sobre desarrollo web,     
+            tecnologías emergentes y oportunidades de empleo en el sector tecnológico.
         </p>
         <Link
           to='/search'

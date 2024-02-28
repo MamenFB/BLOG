@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'flowbite-react';
-import aiGhostImage from '../assets/fantas..webp'; // Ajusta esta ruta según sea necesario
+import aiGhostImage from '../assets/fantas..webp'; 
 
 export default function CallToAction() {
   return (

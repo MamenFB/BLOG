@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .avatar-small img {
-  width: 60px; 
-  height: 60%; 
+  width: 70px; 
+  height: 70%; 
   object-fit: cover; 
 }
 .bg-amber-100 {
   --tw-bg-opacity: 1;
-  background-color: #06c;
+  background-color: rgb(151, 191, 231);
 }
 .ai-ghost-image {
   max-width: 100%;

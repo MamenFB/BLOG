@@ -29,8 +29,8 @@ En este blog, encontrarás actualizaciones sobre desarrollo web, tecnologías em
   - 🔹npm i nodemon  
   - 🔹npm i mongoose ➰ una librería para trabajar con MongoDB en Node.js.  
   - 🔹npm i dotenv ➰ un módulo que carga variables de entorno desde un archivo .env a process.env. Esto ayuda a mantener la configuración separada del código.  
-  - 🔹npm i bcryptjs ➰ una librería para hash y comparar contraseñas en Node.js. No de guardar la contraseña directamente, se guarda un hash de la misma.  
-  - 🔹npm i jsonwebtoken ➰ una implementación de JSON Web Tokens, comúnmente usados para implementar autenticación y autorización en aplicaciones web y móviles.
+  - 🔹npm i bcryptjs ➰ una librería para hash y comparar contraseñas en Node.js. No de guardar la contraseña directamente, se guarda un hash de la misma. 
+  - 🔹npm i jsonwebtoken ➰ una implementación de JSON Web Tokens, comúnmente usados para implementar autenticación y autorización en aplicaciones web y móviles. (https://www.base64decode.org/es/) (codificar)
 
  
 - 🔸 carpeta client

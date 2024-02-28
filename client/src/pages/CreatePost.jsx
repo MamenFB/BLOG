@@ -83,7 +83,7 @@ export default function CreatePost() {
   };
   return (
     <div className='p-3 max-w-3xl mx-auto min-h-screen'>
-      <h1 className='text-center text-3xl my-7 font-semibold'>Crear una publicacion</h1>
+      <h1 className='text-center text-3xl my-7 font-semibold'>Crear un post</h1>
       <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-4 sm:flex-row justify-between'>
           <TextInput
@@ -143,7 +143,7 @@ export default function CreatePost() {
         )}
         <ReactQuill
           theme='snow'
-          placeholder='Write something...'
+          placeholder='Escribe algo....'
           className='h-72 mb-12'
           required
           onChange={(value) => {

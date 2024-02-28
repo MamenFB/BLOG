@@ -4,7 +4,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import  { toggleTheme } from '../redux/theme/themeSlice';
-import { signoutSuccess } from '../redux/user/userSlice';
+import { signInSuccess } from '../redux/user/userSlice';
 import { useEffect, useState } from 'react';
 
 export default function Header() {
@@ -26,28 +26,31 @@ export default function Header() {
   }, [location.search]);
 
   const handleSignout = async () => {
+
     try {
-      const res = await fetch('/api/user/signout', {
-        method: 'POST',
+      const res =await fetch ('api/user/signout',{
+        method:'post',
       });
       const data = await res.json();
       if (!res.ok) {
         console.log(data.message);
       } else {
-        dispatch(signoutSuccess());
+        dispatch(signInSuccess());
       }
-    } catch (error) {
+    } catch(error) {
       console.log(error.message);
     }
-  };
+  };  
+
 
   const handleSubmit = (e) => {
+
     e.preventDefault();
     const urlParams = new URLSearchParams(location.search);
     urlParams.set('searchTerm', searchTerm);
     const searchQuery = urlParams.toString();
     navigate(`/search?${searchQuery}`);
-  };
+};
 
   return (
     <Navbar className='border-b-2'>
@@ -59,14 +62,14 @@ export default function Header() {
           Mamen Blog
         </span>
       </Link>
-      <form >
+      <form onSubmit={handleSubmit}>
         <TextInput
           type='text'
           placeholder='Buscar...'
           rightIcon={AiOutlineSearch}
           className='hidden lg:inline'
-          // value={searchTerm}
-          // onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
       </form>
       <Button className='w-12 h-10 lg:hidden' color='gray' pill>
@@ -102,8 +105,8 @@ export default function Header() {
                 <Dropdown.Item>Perfil</Dropdown.Item>
               </Link>
             <Dropdown.Divider />
-              <Dropdown.Item>Desconectar</Dropdown.Item>
-            </Dropdown>
+            <Dropdown.Item onClick={handleSignout}>Desconectar</Dropdown.Item>
+          </Dropdown>
         ) : (
           <Link to='/sign-in'>
             <Button gradientDuoTone='purpleToBlue' outline>

@@ -9,7 +9,7 @@ export default function About() {
           <div className='text-md text-gray-500 flex flex-col gap-6'>
             <p>
             ¡Bienvenidos a mi Blog! Lo hice
-              como un proyecto personal para compartir sus pensamientos e ideas con el
+              como un proyecto personal para compartir mis pensamientos e ideas con el
               mundo. Soy una desarrolladora apasionada a la que le encanta escribir sobre
               tecnología, codificación y todo lo demás.
             </p>

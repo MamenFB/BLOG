@@ -15,7 +15,7 @@ export default function Home() {
     fetchPosts();
   }, []);
   return (
-    <div className='bg-blue-100'> {/* Aquí he añadido la clase de color de fondo */}
+    <div className='bg-blue-100'> {/* color de fondo */}
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
         <h1 className='text-3xl font-bold lg:text-6xl dark:bg-slate-700'>Bienvenidxs a mi Blog</h1>
         <p className='dark:bg-slate-700 text-xs sm:text-lg'>
@@ -24,7 +24,7 @@ export default function Home() {
         </p>
         <Link
           to='/search'
-          className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
+          className='text-xs sm:text-sm text-teal-600 font-bold hover:underline'
         >
           Ver todas las publicaciones
         </Link>
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <Link
               to={'/search'}
-              className='text-lg text-teal-500 hover:underline text-center'
+              className='text-lg text-teal-00 hover:underline text-center'
             >
               
               Ver todas las publicaciones

@@ -102,9 +102,9 @@ export default function CreatePost() {
             }
           >
             <option value='uncategorized'>Seleciona  categoria</option>
-            <option value='javascript'>Noticias</option>
-            <option value='reactjs'>Sobre empleos</option>
-            <option value='nextjs'>Tecnologías</option>
+            <option value='noticias'>Noticias</option>
+            <option value='empleo'>Empleos</option>
+            <option value='tecnologias'>Tecnologías</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>

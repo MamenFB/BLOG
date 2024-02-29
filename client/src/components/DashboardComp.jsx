@@ -62,8 +62,9 @@ export default function DashboardComp() {
     };
     if (currentUser.isAdmin) {
       fetchUsers();
-      fetchPosts();
+      fetchPosts(),
       fetchComments();
+     
     }
   }, [currentUser]);
   return (

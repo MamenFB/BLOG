@@ -15,10 +15,10 @@ export default function Home() {
     fetchPosts();
   }, []);
   return (
-    <div>
+    <div className='bg-blue-100'> {/* Aquí he añadido la clase de color de fondo */}
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Bienvenidxs a mi Blog</h1>
-        <p className='text-gray-500 text-xs sm:text-sm'>
+        <h1 className='text-3xl font-bold lg:text-6xl dark:bg-slate-700'>Bienvenidxs a mi Blog</h1>
+        <p className='dark:bg-slate-700 text-xs sm:text-lg'>
             En este blog, encontrarás actualizaciones sobre desarrollo web,     
             tecnologías emergentes y oportunidades de empleo en el sector tecnológico.
         </p>

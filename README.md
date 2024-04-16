@@ -64,3 +64,7 @@ npm run dev
 
 - 🔹Frontend  localhost:5173  
 - 🔹Backend localhost:3000  
+
+## 🔗 Deploy 
+
+https://blog-6.onrender.com/

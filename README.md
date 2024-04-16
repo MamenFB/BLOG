@@ -59,11 +59,8 @@ En este blog, encontrarás actualizaciones sobre desarrollo web, tecnologías em
 
 ## ♨️ Arrancamos con:
 
-
-npm run dev  
-
-- 🔹Frontend  localhost:5173  
-- 🔹Backend localhost:3000  
+- 🔹Frontend  localhost:5173  npm run dev  
+- 🔹Backend localhost:3000  npm run start
 
 ## 🔗 Deploy 
 

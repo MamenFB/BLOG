@@ -18,7 +18,7 @@ export default function FooterCom() {
           </div>
           <div className='grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6'></div>
           <div>
-              <Footer.Title title='Acerca de' />
+              <Footer.Title title='Sobre Mi' />
               <Footer.LinkGroup col>
                 <Footer.Link
                   href='https://www.100jsprojects.com'

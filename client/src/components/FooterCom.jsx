@@ -23,6 +23,7 @@ export default function FooterCom() {
                 href='https://www.100jsprojects.com'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='hover:underline'
               >
                 100 JS Proyectos
               </Footer.Link>
@@ -30,6 +31,7 @@ export default function FooterCom() {
                 href='/about'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='hover:underline'
               >
                 Mamen Blog
               </Footer.Link>
@@ -42,18 +44,25 @@ export default function FooterCom() {
                 href='https://github.com/MamenFB'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='hover:underline'
               >
                 Github
               </Footer.Link>
-          
-              <Footer.Link href='/contacto'>Contacto</Footer.Link>
+            
+              <Link to='/contacto' className='footer-link hover:underline'>
+                Contacto
+              </Link>
             </Footer.LinkGroup>
           </div>
           <div>
             <Footer.Title title='Legal' />
             <Footer.LinkGroup col>
-              <Footer.Link href='#'>Política de privacidad</Footer.Link>
-              <Footer.Link href='#'>Términos &amp; Condiciones</Footer.Link>
+              <Footer.Link href='#' className='hover:underline'>
+                Política de privacidad
+              </Footer.Link>
+              <Footer.Link href='#' className='hover:underline'>
+                Términos & Condiciones
+              </Footer.Link>
             </Footer.LinkGroup>
           </div>
         </div>

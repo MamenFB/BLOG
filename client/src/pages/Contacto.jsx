@@ -58,7 +58,7 @@ function Contacto() {
 
   return (
     <form onSubmit={handleSubmit} style={{ padding: '20px' }}>
-      <h2>¿Cómo contactamos?</h2>
+      <h2>¿Contactamos?</h2>
       <div style={{ margin: '10px 0' }}>
         <label htmlFor="email">Email:</label>
         <input

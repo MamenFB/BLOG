@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from 'axios'; // Esta importación parece no usarse, asegúrate de eliminarla si no es necesaria.
+import emailjs from 'emailjs-com';
 
 function Contacto() {
   const [formData, setFormData] = useState({
@@ -24,23 +25,36 @@ function Contacto() {
       console.error('Se detectó actividad sospechosa de bot.');
       return;
     }
+    sendEmail();
+  };
 
-    const config = {
-      headers: {
-        'Content-Type': 'application/json'
-      }
+  const sendEmail = () => {
+    const params = {
+      name: formData.nombre,
+      email: formData.email,
+      message: formData.mensaje,
     };
-
-    const url = 'http://tu-servidor.com/api/contact';
-
-    axios.post(url, formData, config)
-      .then(response => {
-        console.log('Datos enviados correctamente:', response.data);
+    emailjs.send("service_c61akaa", "template_5wfacvl", params)
+      .then(() => {
+        alert("¡Email enviado!");
+        // Resetear el formulario a su estado inicial
+        setFormData({
+          email: '',
+          nombre: '',
+          mensaje: '',
+          secretCode: '',
+          trackingId: ''
+        });
       })
-      .catch(error => {
-        console.error('Error enviando los datos:', error);
+      .catch((error) => {
+        console.error('Error al enviar email:', error);
       });
   };
+
+  
+  React.useEffect(() => {
+    emailjs.init("WvUl0DMBSH5r2gDXW"); 
+  }, []);
 
   return (
     <form onSubmit={handleSubmit} style={{ padding: '20px' }}>

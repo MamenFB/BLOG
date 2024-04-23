@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function Contacto() {
   const [formData, setFormData] = useState({
-    email: '', // Un campo visible para el email del usuario.
-    secretCode: '', // Primer campo oculto.
-    trackingId: '' // Segundo campo oculto.
+    email: '',
+    secretCode: '', // Campo oculto como trampa para bots.
+    trackingId: ''  // Otro campo oculto como trampa para bots.
   });
 
   const handleChange = (e) => {
@@ -21,12 +22,28 @@ function Contacto() {
     // Verificar si los campos ocultos fueron alterados
     if (formData.secretCode !== '' || formData.trackingId !== '') {
       console.error('Se detectó actividad sospechosa de bot.');
-      return; // No enviar el formulario
+      return; // No enviar el formulario y potencialmente registrar un intento de acceso sospechoso.
     }
 
-    console.log('Datos enviados:', formData);
-    // Aquí puedes enviar los datos a un servidor o manejarlos como necesites.
-    // Asegúrate de realizar la validación final del lado del servidor también.
+    // Configuración de la solicitud POST
+    const config = {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+
+    // URL del endpoint de tu servidor (ajusta según tu configuración de servidor)
+    const url = 'http://tu-servidor.com/api/contact';
+
+    axios.post(url, formData, config)
+      .then(response => {
+        console.log('Datos enviados correctamente:', response.data);
+        // Aquí puedes manejar la respuesta del servidor, como mostrar un mensaje de éxito.
+      })
+      .catch(error => {
+        console.error('Error enviando los datos:', error);
+        // Aquí puedes manejar errores de la solicitud, como mostrar un mensaje de error.
+      });
   };
 
   return (
@@ -39,6 +56,7 @@ function Contacto() {
           name="email"
           value={formData.email}
           onChange={handleChange}
+          required // Asegura que el campo email debe ser llenado.
         />
       </div>
       <input
@@ -51,7 +69,7 @@ function Contacto() {
         name="trackingId"
         value={formData.trackingId}
       />
-      <button type="submit">Enviar</button>
+      <button className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-lg text-white'type="submit">Enviar</button>
     </form>
   );
 }

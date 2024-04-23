@@ -65,3 +65,9 @@ En este blog, encontrarás actualizaciones sobre desarrollo web, tecnologías em
 ## 🔗 Deploy 
 
 https://blog-6.onrender.com/
+
+usuario 
+nadie2
+nadie2@gamil.com
+contraseña:
+789456

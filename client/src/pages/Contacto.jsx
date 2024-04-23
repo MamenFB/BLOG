@@ -4,6 +4,8 @@ import axios from 'axios';
 function Contacto() {
   const [formData, setFormData] = useState({
     email: '',
+    nombre: '',
+    mensaje: '',
     secretCode: '', // Campo oculto como trampa para bots.
     trackingId: ''  // Otro campo oculto como trampa para bots.
   });
@@ -41,14 +43,36 @@ function Contacto() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form onSubmit={handleSubmit} style={{ padding: '20px' }}>
+      <h2>¿Cómo contactamos?</h2>
+      <div style={{ margin: '10px 0' }}>
         <label htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
           value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div style={{ margin: '10px 0' }}>
+        <label htmlFor="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          value={formData.nombre}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div style={{ margin: '10px 0' }}>
+        <label htmlFor="mensaje">Mensaje:</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          value={formData.mensaje}
           onChange={handleChange}
           required
         />

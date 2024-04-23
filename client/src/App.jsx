@@ -6,7 +6,7 @@ import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
 import Projects from './pages/Projects';
 import SignUp from './pages/Signup';
-import Contacto from './pages/Contacto'; 
+import Contacto from './pages/Contacto';
 import Header from './components/Header';
 import FooterCom from './components/FooterCom'; 
 import PrivateRoute from './components/PrivateRoute';

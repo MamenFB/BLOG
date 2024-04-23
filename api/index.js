@@ -22,7 +22,7 @@ const __dirname = path.resolve();
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3000/contact']
+ 
 }));
 
 app.use(express.json());

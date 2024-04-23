@@ -1,25 +1,22 @@
 
 ## 🌈  Descripción
-- Blog MERN  
-- Bienvenidxs a mi Blog  
-  
+Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, Node.js), enfocado en compartir actualizaciones sobre desarrollo web, tecnologías emergentes y oportunidades de empleo en el sector tecnológico. Aquí, podrás encontrar desde tutoriales hasta análisis profundos de las últimas tendencias en tecnología.
 
-En este blog, encontrarás actualizaciones sobre desarrollo web, tecnologías emergentes y oportunidades de empleo en el sector tecnológico.
 
 
 
 ## 💻 Tecnologías 
-🔹HTML 5  
-🔹CSS 3  
-🔹Tailwind  
-🔹Express  
-🔹Mongodb  
-🔹Vite  
+- HTML 5
+- CSS 3
+- Tailwind
+- Express
+- MongoDB
+- Vite
 
 ## 🔥 Herramientas
-🔹Git / GitHub  
-🔹Visual Studio Code  
-🔹Insomnia ➰  probar APIs 
+- Git / GitHub
+- Visual Studio Code
+- Insomnia (para probar APIs)
 
 ## 🚀 Instalación
 
@@ -31,7 +28,7 @@ En este blog, encontrarás actualizaciones sobre desarrollo web, tecnologías em
   - 🔹npm i mongoose ➰ una librería para trabajar con MongoDB en Node.js.  
   - 🔹npm i dotenv ➰ un módulo que carga variables de entorno desde un archivo .env a process.env. Esto ayuda a mantener la configuración separada del código.  
   - 🔹npm i bcryptjs ➰ una librería para hash y comparar contraseñas en Node.js. No de guardar la contraseña directamente, se guarda un hash de la misma. 
-  - 🔹npm i jsonwebtoken ➰ una implementación de JSON Web Tokens, comúnmente usados para implementar autenticación y autorización en aplicaciones web y móviles. (https://www.base64decode.org/es/) (codificar)
+  - 🔹npm i jsonwebtoken ➰ una implementación de JSON Web Tokens, comúnmente usados para implementar autenticación y autorización en aplicaciones web y móviles. 
 
  
 - 🔸 carpeta client
@@ -55,7 +52,9 @@ En este blog, encontrarás actualizaciones sobre desarrollo web, tecnologías em
 
 ## 🚨Instalación
 - 🔹 Creamos un archivo .env donde va la clave  
-- 🔹gitignore lo incluimos para que no se vean nuestros datos  
+- 🔹 gitignore lo incluimos para que no se vean nuestros datos  
+- 🔹 Para instalar todas las dependencias necesarias para el servidor y el cliente, ejecuta:npm run build
+
 
 ## ♨️ Arrancamos con:
 

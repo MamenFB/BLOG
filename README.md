@@ -90,16 +90,11 @@ contraseña:
 789456
 - 🔹El admin es el único para crear, editar y eliminar usuarios.
 
-![image](https://github.com/MamenFB/BLOG/assets/106315129/402a97a6-7262-46e2-9d29-88550c7108ee)
 
-![image](https://github.com/MamenFB/BLOG/assets/106315129/75892841-6e0a-48fd-8f1a-ea86603d7391)
-
-![image](https://github.com/MamenFB/BLOG/assets/106315129/9f6bcaa2-d3bf-4c6a-a992-008583c4e073)
 
 
 - 🔹Se aplica un middleware en la ruta limitando el número de peticiones aceptadas con tokenExpirationTime 
 
-![image](https://github.com/MamenFB/BLOG/assets/106315129/84244f95-51bb-44f7-aa13-a8a406014377)
 
 
 usuario 

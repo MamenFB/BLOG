@@ -67,12 +67,19 @@ https://blog-6.onrender.com/
 
 ## 🚨 Implementación de Prácticas de Desarrollo Seguro
 - 🔹ReCaptcha de Google para el formulario.
+
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/402a97a6-7262-46e2-9d29-88550c7108ee)
+
 - 🔹Dentro de contacto se implementar 2 campos ocultos en el formulario.
+
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/75892841-6e0a-48fd-8f1a-ea86603d7391)
+
 - 🔹y si todo va bien se envia a gmail.
+
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/9f6bcaa2-d3bf-4c6a-a992-008583c4e073)
+
 - 🔹Rutas para login(email , password) con 2 roles diferentes admin y user.
+
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/84244f95-51bb-44f7-aa13-a8a406014377)
 
 

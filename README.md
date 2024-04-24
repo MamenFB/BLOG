@@ -66,13 +66,13 @@ Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, 
 https://blog-6.onrender.com/
 
 ## 🚨 Implementación de Prácticas de Desarrollo Seguro
-ReCaptcha de Google para el formulario.
+- 🔹ReCaptcha de Google para el formulario.
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/402a97a6-7262-46e2-9d29-88550c7108ee)
+- 🔹Dentro de contacto se implementar 2 campos ocultos en el formulario.
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/75892841-6e0a-48fd-8f1a-ea86603d7391)
+- 🔹y si todo va bien se envia a gmail.
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/9f6bcaa2-d3bf-4c6a-a992-008583c4e073)
-
-
-
+- 🔹Rutas para login(email , password) con 2 roles diferentes admin y user.
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/84244f95-51bb-44f7-aa13-a8a406014377)
 
 
@@ -81,13 +81,13 @@ nadie2
 nadie2@gamil.com
 contraseña:
 789456
-
+- 🔹El admin es el único para crear, editar y eliminar usuarios.
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/402a97a6-7262-46e2-9d29-88550c7108ee)
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/75892841-6e0a-48fd-8f1a-ea86603d7391)
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/9f6bcaa2-d3bf-4c6a-a992-008583c4e073)
 
 
-
+- 🔹Se aplica un middleware en la ruta limitando el número de peticiones aceptadas con tokenExpirationTime 
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/84244f95-51bb-44f7-aa13-a8a406014377)
 
 
@@ -103,9 +103,5 @@ contraseña:
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/c958faee-fb1a-411e-bcde-fcca35c95858)
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/4ae50b68-3964-4840-8129-187d4cdac687)
 
-<<<<<<< HEAD
 ![alt text](image.png)
-=======
-
->>>>>>> 4c5a2816d1e1866c6258dbf964ababff13295438
 

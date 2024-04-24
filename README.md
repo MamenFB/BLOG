@@ -72,6 +72,7 @@ https://blog-6.onrender.com/
 
 
 
+![image](https://github.com/MamenFB/BLOG/assets/106315129/84244f95-51bb-44f7-aa13-a8a406014377)
 
 
 usuario 
@@ -79,3 +80,4 @@ nadie2
 nadie2@gamil.com
 contraseña:
 789456
+![image](https://github.com/MamenFB/BLOG/assets/106315129/a577c29c-6a00-413f-bffd-0d78cbf9517d)

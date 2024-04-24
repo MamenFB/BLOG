@@ -106,5 +106,5 @@ contraseña:
 
 - 🔹Se aplica un middleware en la ruta limitando el número de peticiones aceptadas con tokenExpirationTime.
 
-![alt text](image.png)
+![alt text](image-1.png)
 

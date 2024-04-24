@@ -65,6 +65,15 @@ Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, 
 
 https://blog-6.onrender.com/
 
+
+![image](https://github.com/MamenFB/BLOG/assets/106315129/402a97a6-7262-46e2-9d29-88550c7108ee)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/75892841-6e0a-48fd-8f1a-ea86603d7391)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/9f6bcaa2-d3bf-4c6a-a992-008583c4e073)
+
+
+
+
+
 usuario 
 nadie2
 nadie2@gamil.com

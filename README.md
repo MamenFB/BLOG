@@ -81,3 +81,11 @@ nadie2@gamil.com
 contraseña:
 789456
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/a577c29c-6a00-413f-bffd-0d78cbf9517d)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/a9e50161-e12f-472b-a7f3-c039d9fa8159)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/bdd0cacf-618f-4608-bd3b-dbe5bdab22e2)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/42e5a177-1d13-4f36-854a-479a543c5229)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/c958faee-fb1a-411e-bcde-fcca35c95858)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/4ae50b68-3964-4840-8129-187d4cdac687)
+
+
+

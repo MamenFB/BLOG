@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import axios from 'axios'; // Esta importación parece no usarse, asegúrate de eliminarla si no es necesaria.
+import React, { useState } from 'react';  
 import emailjs from 'emailjs-com';
 
 function Contacto() {
@@ -21,11 +20,13 @@ function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Verificar si los campos ocultos están llenos
     if (formData.secretCode !== '' || formData.trackingId !== '') {
+      alert('Se detectó actividad sospechosa de bot. El formulario no se enviará.');
       console.error('Se detectó actividad sospechosa de bot.');
-      return;
+      return; // No proceder con el envío del email
     }
-    sendEmail();
+    sendEmail(); // Proceder a enviar el email si los campos están limpios
   };
 
   const sendEmail = () => {
@@ -36,7 +37,7 @@ function Contacto() {
     };
     emailjs.send("service_c61akaa", "template_5wfacvl", params)
       .then(() => {
-        alert("¡Email enviado!");
+        alert("¡Email enviado exitosamente!");
         // Resetear el formulario a su estado inicial
         setFormData({
           email: '',
@@ -51,9 +52,8 @@ function Contacto() {
       });
   };
 
-  
   React.useEffect(() => {
-    emailjs.init("WvUl0DMBSH5r2gDXW"); 
+    emailjs.init("WvUl0DMBSH5r2gDXW");
   }, []);
 
   return (

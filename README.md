@@ -3,6 +3,7 @@
 ## 🌈  Descripción
 Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, Node.js), enfocado en compartir actualizaciones sobre desarrollo web, tecnologías emergentes y oportunidades de empleo en el sector tecnológico. Aquí, podrás encontrar desde tutoriales hasta análisis profundos de las últimas tendencias en tecnología.
 
+![alt text](image.png)
 
 
 
@@ -66,6 +67,6 @@ Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, 
 
 https://blog-6.onrender.com/
 
-## 🔗 Implementación de Prácticas de Desarrollo Seguro en Auditoria.md
+## 🔗 Implementación de Prácticas de Desarrollo Seguro en Auditoria
 
-https://github.com/MamenFB/BLOG/blob/main/Auditoria.md
+https://drive.google.com/file/d/10wkIbK18FJK1GGoyd6Sn2HzjHBIIIGyN/view?usp=drive_link

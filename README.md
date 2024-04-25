@@ -65,7 +65,6 @@ Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, 
 
 https://blog-6.onrender.com/
 
-## 🔗 Implementación de Prácticas de Desarrollo
-Seguro en Auditoria.md
+## 🔗 Implementación de Prácticas de Desarrollo Seguro en: Auditoria.md
 https://github.com/MamenFB/BLOG/blob/main/Auditoria.md
 

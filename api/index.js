@@ -13,7 +13,7 @@ import path from 'path';
 dotenv.config();
 
 mongoose.connect(process.env.MONGO).then(() => {
-  console.log('MongoDb is connected👍');
+  console.log('MongoDB is connected👍');
 }).catch((err) => {
   console.log(err);
 });
@@ -21,16 +21,16 @@ mongoose.connect(process.env.MONGO).then(() => {
 const __dirname = path.resolve();
 const app = express();
 
-app.use(cors({
- 
-}));
-
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000👌!');
-});
+// Cambio aquí: solo escuchar en el puerto si no estamos en el entorno de prueba
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(3000, () => {
+    console.log('Server is running on port 3000👌!');
+  });
+}
 
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
@@ -52,3 +52,5 @@ app.use((err, req, res, next) => {
     message,
   });
 });
+
+export default app;

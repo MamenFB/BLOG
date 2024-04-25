@@ -8,7 +8,7 @@
     "dev": "nodemon api/index.js",
     "start": "node api/index.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client",
-    "test": "npx jest"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -32,17 +32,11 @@
     "@babel/core": "^7.x",
     "@babel/preset-env": "^7.x",
     "@babel/preset-react": "^7.x",
+    "@testing-library/jest-dom": "^5.x",
+    "@testing-library/react": "^15.0.4",
     "babel-jest": "^27.x",
-    "jest": "^27.x",
-    "@testing-library/react": "^12.x", 
-    "@testing-library/jest-dom": "^5.x"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.[t|j]sx?$": "babel-jest"
-    },
-    "moduleNameMapper": {
-      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
-    }
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "supertest": "^7.0.0"
   }
 }

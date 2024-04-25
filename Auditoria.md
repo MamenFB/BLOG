@@ -42,6 +42,10 @@ contraseña:
 
 ![image](https://github.com/MamenFB/BLOG/assets/106315129/91da87ad-dea7-4148-8ccd-e0908e6a83ec)
 
+- 🔹Se realiza un análisis automático con Owasp Zap.
+- 
+https://drive.google.com/file/d/1AXrh4WjzAn9Jd9oXyHGxJ1mRbHq_f2YK/view?usp=drive_link
+
 
 - 🔹Se realiza un análisis automático con Owasp Zap.
  

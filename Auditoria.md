@@ -46,4 +46,46 @@ contraseña:
 - 
 https://drive.google.com/file/d/1AXrh4WjzAn9Jd9oXyHGxJ1mRbHq_f2YK/view?usp=drive_link
 
+## 🚨Auditoría de los endpoints de la api buscando las 10 vulnerabilidades de Owasp.
 
+Análisis del Informe ZAP:
+
+1. Content Security Policy (CSP) no configurada
+Riesgo: Medio
+Solución: Configura una política CSP adecuada para evitar ataques como XSS. Más información en la Cheat Sheet de OWASP sobre CSP.
+
+2. Configuración Incorrecta Cross-Domain (CORS)
+Riesgo: Medio
+Solución: Revisa y restringe las políticas CORS para que solo permitan acceso de dominios confiables. Más detalles aquí.
+
+3. Falta de cabecera Anti-Clickjacking
+Riesgo: Medio
+Solución: Implementa cabeceras como X-Frame-Options para prevenir este tipo de ataques. Consulta la documentación de MDN sobre X-Frame-Options.
+
+4. Strict-Transport-Security Header Not Set
+Riesgo: Bajo
+Solución: Configura el header Strict-Transport-Security para forzar la comunicación segura vía HTTPS. Aquí la Cheat Sheet de OWASP sobre HSTS.
+
+5. X-Content-Type-Options Header Missing
+Riesgo: Bajo
+Solución: Asegúrate de incluir el header X-Content-Type-Options: nosniff para evitar ataques basados en la interpretación errónea de MIME types por parte del navegador.
+
+6. Divulgación de información a través de headers como X-Powered-By
+Riesgo: Bajo
+Solución: Elimina o modifica headers innecesarios que revelan detalles del software del servidor para minimizar la información disponible para los atacantes.
+
+7. Divulgación de marcas de tiempo Unix
+Riesgo: Bajo
+Solución: Evita exponer marcas de tiempo Unix en nombres de archivos o URLs, que podrían ser utilizados para determinar versiones o configuraciones del sistema.
+
+8. Información potencialmente sensible en comentarios en código fuente
+Riesgo: Informativo
+Solución: Revisa y limpia los comentarios del código fuente antes de desplegar a producción.
+
+9. Directivas de Cache-control necesitan revisión
+Riesgo: Informativo
+Solución: Configura adecuadamente las cabeceras de control de caché para evitar el almacenamiento no deseado de datos sensibles.
+
+10. Datos recuperados desde caché
+Riesgo: Informativo
+Solución: Asegúrate de que la información sensible no se almacene en caché del navegador.

@@ -39,5 +39,6 @@ contraseña:
 
 - 🔹Se aplica un middleware en la ruta limitando el número de peticiones aceptadas con tokenExpirationTime.
 
-![alt text](image-1.png)
+
+![image](https://github.com/MamenFB/BLOG/assets/106315129/91da87ad-dea7-4148-8ccd-e0908e6a83ec)
 

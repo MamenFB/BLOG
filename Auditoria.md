@@ -47,6 +47,3 @@ contraseña:
 https://drive.google.com/file/d/1AXrh4WjzAn9Jd9oXyHGxJ1mRbHq_f2YK/view?usp=drive_link
 
 
-- 🔹Se realiza un análisis automático con Owasp Zap.
- 
-- https://drive.google.com/file/d/1AXrh4WjzAn9Jd9oXyHGxJ1mRbHq_f2YK/view?usp=drive_link

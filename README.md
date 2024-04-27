@@ -3,7 +3,8 @@
 ## 🌈  Descripción
 Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, Node.js), enfocado en compartir actualizaciones sobre desarrollo web, tecnologías emergentes y oportunidades de empleo en el sector tecnológico. Aquí, podrás encontrar desde tutoriales hasta análisis profundos de las últimas tendencias en tecnología.
 
-![alt text](image.png)
+![image](https://github.com/MamenFB/BLOG/assets/106315129/2bb061dd-f002-47d2-8d43-e6b0aadd8d15)
+
 
 
 

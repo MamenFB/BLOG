@@ -6,8 +6,8 @@ function Contacto() {
     email: '',
     nombre: '',
     mensaje: '',
-    secretCode: '', // Campo oculto como trampa para bots.
-    trackingId: ''  // Otro campo oculto como trampa para bots.
+    // secretCode: '', // Campo oculto como trampa para bots.
+    // trackingId: ''  // Otro campo oculto como trampa para bots.
   });
 
   const handleChange = (e) => {

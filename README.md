@@ -62,7 +62,7 @@ Este es un blog desarrollado utilizando el stack MERN (MongoDB, Express, React, 
 ## ♨️ Arrancamos con:
 
 - 🔹Frontend  localhost:5173  (dentro de client) npm run start
-- 🔹Backend localhost:3000  npm run dev 
+- 🔹Backend localhost:3001 npm run dev 
 
 ## 🔗 Deploy 
 
